@@ -26,7 +26,7 @@ const Cart = (props) => {
   };
 
   const submitOrderHandler = (userData) => {
-
+    //fetching data from firebase
     fetch('https://food-delivery-4adc0-default-rtdb.firebaseio.com/orders.json',{
       method:'POST',body:JSON.stringify({
         user:userData,

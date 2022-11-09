@@ -15,7 +15,7 @@ function App() {
   const hideCartHandler = () => {
     setCartIsShown(false);
   };
-
+//added cart data
   return (
     <CartProvider>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
